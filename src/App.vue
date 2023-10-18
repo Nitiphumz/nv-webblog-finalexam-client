@@ -7,7 +7,8 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  baseURL: 'http://10.31.27.240:8081/'
 }
 </script>
 

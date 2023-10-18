@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Get All Courses</h1>
-    <div>จํานวนผู้ใช้งาน {{ courses.length }}</div>
+    <div>จํานวนคอร์ส {{ courses.length }}</div>
     <div v-for="course in courses" v-bind:key="course.id">
       <div>id: {{ course.id }}</div>
       <div>title: {{ course.title }}</div>
