@@ -1,33 +1,33 @@
+import CourseCreate from '@/components/Courses/CreateCourse'
+import CourseEdit from '@/components/Courses/EditCourse'
+import CourseIndex from '@/components/Courses/Index'
+import CourseShow from '@/components/Courses/ShowCourse'
 import Vue from 'vue'
 import Router from 'vue-router'
-import UserIndex from '@/components/Users/Index'
-import UserEdit from '@/components/Users/EditUser'
-import UserShow from '@/components/Users/ShowUser'
-import UserCreate from '@/components/Users/CreateUser'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/user/create',
-      name: 'user-create',
-      component: UserCreate
+      path: '/course/create',
+      name: 'course-create',
+      component: CourseCreate
     },
     {
-      path: '/user/edit/:userId',
-      name: 'user-edit',
-      component: UserEdit
+      path: '/course/edit/:courseId',
+      name: 'course-edit',
+      component: CourseEdit
     },
     {
-      path: '/user/:userId',
-      name: 'user',
-      component: UserShow
+      path: '/course/:courseId',
+      name: 'course',
+      component: CourseShow
     },
     {
-      path: '/users',
-      name: 'users',
-      component: UserIndex
+      path: '/courses',
+      name: 'courses',
+      component: CourseIndex
     },
 
     
